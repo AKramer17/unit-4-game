@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+    <title>CrystalCollector Game</title>
+</head>
+
+<body style="background-image: url(assets/images/vertical-waves.png)">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Alex Kramer: Crystal Collector</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <div class="jumbotron jumbotron-fluid" style="background-image: url(assets/images/crystalBackground.jpg)">
+                        <h2 class="gameTitle">Crystal Collector</h1>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" id="instructions">
+                <p id = "theDeets"> It. Is time. For. Basic addition...! ...with a twist! And crystals! <strong>Follow the instructions below: </strong>
+                <br><br>
+                Below you will find 4 crystals. Each crystal will contain its own numerical value, randomly determined at the start of the game.
+                <br>The target number will appear on the right. Your objective is to use the number values held in each of the crystals, and continue adding the values together until you've reach the target number <strong>exactly</strong>.
+                <br>Going higher than the target means you lose! Be careful as you approach the target number.
+                </p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+
+            <div class="col-md-2 col-md-offset-2">
+                <img id="cstl1" src="assets/images/crystal1.jpg">
+            </div>
+
+            <div class="col-md-2">
+                <img id="cstl2" src="assets/images/crystal2.jpg">
+            </div>
+
+            <div class="col-md-2">
+                <img id="cstl3" src="assets/images/crystal3.jpg">
+            </div>
+
+            <div class="col-md-2">
+                <img id="cstl4" src="assets/images/crystal4.jpg">
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div id="targetBox">
+                <div class="col-md-2 col-md-offset-8">
+                    <p>Target </p>
+                    <br>
+                    <p id="targetNumber"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="playerBox">
+                <div class="col-md-2 col-md-offset-8">
+                    <p>Current Number </p>
+                    <br>
+                    <p id="playerNumber"></p>
+                </div>
+            </div>
+            <div id="wl-recordBox">
+                <div class="col-md-2">
+                    <p>Wins: </p>
+                    <br>
+                    <p id="wins">0</p>
+                    <br><br>
+                    <p>Losses: </p>
+                    <br>
+                    <p id="losses">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--             <div class="col-md-3">
+                <div class="row" style="background-color:rgb(217, 236, 42); border: 3px solid rgb(70, 7, 99);border-radius: 5px; height: 100px;text-align: center; line-height: 80px;">
+                    <p id="targetnumber"></p>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="row" style="background-color:rgb(217, 144, 231); border: 3px solid rgb(70, 7, 99);border-radius: 5px; height: 40px;text-align: center; margin-top: 40px; line-height: 35px">
+                            <p class="balckw">Your total score is:</p>
+                        </div>
+                        <div class="row" style="background-color:rgb(217, 144, 231); border: 3px solid rgb(70, 7, 99);border-radius: 5px; height: 100px;text-align: center; margin-top: 20px">
+                            <p id="score"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="background-color:rgb(214, 163, 200); border: 3px solid rgb(70, 7, 99);border-radius: 5px;text-align: center; margin-top: 40px; margin-left: 15px; height: 160px;">
+                        <p class="balckw">Wins:</p>
+                        <p id="win"><br>0</p>
+                        <p class="balckw">Losses:</p>
+                        <p id="lose"><br>0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>
