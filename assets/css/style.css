@@ -113,17 +113,74 @@ header .headerContainer {
     border: 9px solid #f95e10;
     border-radius: 17px;
     background-color:#ffebfd;
+    cursor: pointer;
 }
 
-#targetBox {
+#cstl1:hover {
+    margin-top: -3px;
+    margin-left: -1px;
+    border: 9px solid #167500;
+  }
+  
+  #cstl2:hover {
+    margin-top: -3px;
+    margin-left: -1px;
+    border: 9px solid #167500;
+  }
+  #cstl3:hover {
+    margin-top: -3px;
+    margin-left: -1px;
+    border: 9px solid #167500;
+  }
+  #cstl4:hover {
+    margin-top: -3px;
+    margin-left: -1px;
+    border: 9px solid #167500;
+  }
+  
+  #cstl1:active {
+    cursor: grab;
+  }
+  
+  #cstl2:active {
+    cursor: grab;
+  }
+  #cstl3:active {
+    cursor: grab;
+  }
+  #cstl4:active {
+    cursor: grab;
+  }
+
+#targetBox p {
     border: 3px solid #b4e506;
     border-radius: 25px;
     height: 90px;
     text-align: center;
 }
 
+#playerBox p {
+    border: 3px solid #b4e506;
+    border-radius: 25px;
+    height: 90px;
+    text-align: center;
+}
+
+#wl-recordBox p {
+    border: 3px solid #b4e506;
+    border-radius: 25px;
+    height: 90px;
+    text-align: center;
+}
+
+#wl-recordBox, #playerBox, #targetBox {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    text-align: center;
+}
+
 /* #instructions {
-    
+
 } */
 
 /* .myName {
