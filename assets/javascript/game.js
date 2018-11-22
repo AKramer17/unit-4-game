@@ -14,6 +14,14 @@ $(document).ready(function() {
 
     $("#cstl1").on("click", function() {
         current += valC1;
+        $("#playerNumber").text(current);
+        if (current === target) {
+            alert("You win! Yay math!");
+            winCount++;
+        } else if (current > target) {
+            alert("You lose! But let's try again")
+            lossCount++;
+        }
     });
 
     $("#cstl2").on("click", function() {
