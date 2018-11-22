@@ -3,14 +3,14 @@ $(document).ready(function() {
     var current = 0;
     var winCount = 0;
     var lossCount = 0;
-    var target = Math.floor(Math.random() * 150 + 39);
+    var target = Math.floor(Math.random() * 102 + 19);
 
     $("#targetNumber").text(target);
 
-    var valC1 = Math.floor(Math.random() * 17 + 1);
-    var valC2 = Math.floor(Math.random() * 17 + 1);
-    var valC3 = Math.floor(Math.random() * 17 + 1);
-    var valC4 = Math.floor(Math.random() * 17 + 1);
+    var valC1 = Math.floor(Math.random() * 12 + 1);
+    var valC2 = Math.floor(Math.random() * 12 + 1);
+    var valC3 = Math.floor(Math.random() * 12 + 1);
+    var valC4 = Math.floor(Math.random() * 12 + 1);
 
     $("#cstl1").on("click", function() {
         current += valC1;
@@ -67,12 +67,12 @@ $(document).ready(function() {
     }
 
     function reset() {
-        target = Math.floor(Math.random() * 150 + 39);
+        target = Math.floor(Math.random() * 102 + 19);
         $("#targetNumber").text(target);
-        valC1 = Math.floor(Math.random() * 17 + 1);
-        valC2 = Math.floor(Math.random() * 17 + 1);
-        valC3 = Math.floor(Math.random() * 17 + 1);
-        valC4 = Math.floor(Math.random() * 17 + 1);
+        valC1 = Math.floor(Math.random() * 12 + 1);
+        valC2 = Math.floor(Math.random() * 12 + 1);
+        valC3 = Math.floor(Math.random() * 12 + 1);
+        valC4 = Math.floor(Math.random() * 12 + 1);
         current = 0;
         $("#playerNumber").text(current);
       }
